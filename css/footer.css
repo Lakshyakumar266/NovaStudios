@@ -3,8 +3,8 @@
    ============================================ */
 
 .site-footer {
-    background-color: #0a1628;
-    color: #d1d5db;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 60px 0 0;
     /* ISSUE (Advanced): font-size override conflicts with global.css body font-size */
     font-size: 15px;
@@ -21,14 +21,14 @@
 }
 
 .footer-col h3 {
-    color: #ffffff;
+    color: var(--footer-title);
     font-size: 1.1rem;
     margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .footer-col p {
-    color: #9ca3af;
+    color: var(--footer-text);
     line-height: 1.7;
     font-size: 0.9rem;
 }
@@ -44,7 +44,7 @@
 }
 
 .footer-col ul li a {
-    color: #9ca3af;
+    color: var(--footer-text);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.2s;
@@ -61,7 +61,7 @@
 .footer-brand .logo-text {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--footer-title);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -83,7 +83,7 @@
     height: 36px;
     border-radius: 50%;
     background-color: rgba(255,255,255,0.1);
-    color: #d1d5db;
+    color: var(--footer-text);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 700;
@@ -113,9 +113,9 @@
 
 .footer-newsletter input[type="email"] {
     padding: 8px 12px;
-    border: 1px solid #374151;
-    background-color: #1e293b;
-    color: #ffffff;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    color: var(--input-text);
     border-radius: 4px 0 0 4px;
     font-size: 0.85rem;
     flex: 1;
@@ -123,7 +123,7 @@
 }
 
 .footer-newsletter input[type="email"]::placeholder {
-    color: #6b7280;
+    color: var(--input-placeholder);
 }
 
 .footer-newsletter button {
@@ -145,10 +145,10 @@
 .footer-bottom {
     margin-top: 40px;
     padding: 20px;
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--border-color);
     text-align: center;
     font-size: 0.8rem;
-    color: #6b7280;
+    color: var(--text-muted);
 }
 
 .footer-bottom-links {
@@ -159,7 +159,7 @@
 }
 
 .footer-bottom-links a {
-    color: #6b7280;
+    color: var(--text-muted);
     text-decoration: none;
     font-size: 0.8rem;
 }
